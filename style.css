@@ -1,0 +1,174 @@
+/* || General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* || Typography */
+
+html {
+  font-family: 'Roboto Slab', serif;
+  font-size: 10px;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
+}
+
+section h2 + p {
+  text-indent: 2rem;
+}
+
+/* || Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* || header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+header {
+  margin-top: 1rem;
+}
+
+footer {
+  margin-bottom: 1rem;
+}
+
+/* || Links */
+
+a {
+  text-decoration: underline;
+  outline: none;
+}
+
+a[href*="https"] {
+  background: url(external-link-52.png) no-repeat 100% 0;
+  background-size: 1.6rem 1.6rem;
+  padding-right: 1.9rem;
+}
+
+a:link {
+  color: rgb(141, 37, 37);
+}
+
+a:visited {
+  color: rgb(114, 12, 105);
+}
+
+a:focus, a:hover {
+  color: black;
+  text-decoration: none;
+  background-color: rgb(196, 125, 78);
+}
+
+a:active {
+  color: black;
+  background-color: rgb(223, 108, 108);
+}
+
+/* || Lists */
+
+ul {
+  list-style-type: none;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+ol {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+ul li {
+  padding-left: 1.5rem;
+  background-image: url(arrow.png);
+  background-position: 0 0.5rem;
+  background-size: 1rem;
+  background-repeat: no-repeat;
+}
+
+ol li {
+  list-style-type: lower-alpha;
+}
+
+/* || Navigation menu */
+
+nav ul {
+    padding: 0;
+    margin-left: 2rem;
+    width: 100%;
+    margin-top: 2.8rem;
+}
+
+nav ul li {
+  display: block;
+  background-image: none;
+  margin-bottom: 1.5rem;
+}
+
+nav ul li a {
+  outline: brown solid 1px;
+  text-decoration: none;
+  display: block;
+  height: 7rem;
+  text-align: center;
+  line-height: 4.3;
+  color: rgb(83, 20, 20);
+}
+
+nav ul li a:focus, nav ul li a:hover, nav ul li a:visited {
+  background-color: rgba(192, 78, 78, 0.3);
+  color: rgb(83, 20, 20);
+}
+
+nav ul li a:active {
+  background-color: rgba(54, 19, 19, 0.3);
+}
